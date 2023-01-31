@@ -1,0 +1,135 @@
+.todo {
+    display: flex;
+    min-width: 700px;
+    margin: 0.3rem;
+    background: #ffffff;
+    color: black;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1px;
+    transition: all 0.5s ease;
+  }
+  
+  .todoCompleted {
+    display: flex;
+    min-width: 700px;
+    margin: 0.5rem;
+    background: rgb(165, 138, 74);
+    color: black;
+    font-size: 1.3rem;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    border-radius: 1px;
+  
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  .todo li,
+  .todoCompleted li {
+    flex: 1;
+  }
+  
+  .trashBtn
+  {
+    outline: none;
+    background: rgba(0, 0, 0, 0.859);
+    color: rgb(232, 40, 40);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .completeBtn {
+    outline: none;
+    background: rgba(0, 0, 0, 0.859);
+    color: rgb(247, 247, 247);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .importantBtn{
+    outline: none;
+    background: rgba(51, 142, 239, 0.859);
+    color: rgb(235, 235, 235);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .trashBtn {
+    border-radius: 0px 2px 2px 0px;
+  }
+  
+  .trashBtn:hover {
+    background: rgba(0, 0, 0, 0.941);
+  }
+  
+  .completeBtn {
+    background: green;
+  }
+  
+  .completeBtn:hover {
+    background: rgb(4, 84, 4);
+  }
+
+  .importantBtn {
+    background: rgba(51, 142, 239, 0.859);
+  }
+  
+  .importantBtn:hover {
+    background: rgba(60, 84, 109, 0.859);
+  }
+
+
+  
+  .todoItem {
+    padding: 0rem 0.5rem;
+  }
+  
+  .faCheck,
+  .faTrash {
+    pointer-events: none;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  /* Medium */
+  @media screen and (max-width: 950px) {
+    .todo,
+    .todoCompleted {
+      font-size: 1.3rem;
+      min-width: 30%;
+      width: 85vw;
+    }
+  
+    .trashBtn,
+    .completeBtn {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Small */
+  @media screen and (max-width: 650px) {
+    .todo,
+    .todoCompleted {
+      font-size: 0.9rem;
+    }
+  
+    .trashBtn,
+    .completeBtn {
+      font-size: 0.5rem;
+    }
+  }
